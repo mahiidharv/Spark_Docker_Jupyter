@@ -3,7 +3,7 @@ FROM java:8-jdk
 FROM python:3.7.4-stretch
 
 # Set the working directory
-WORKDIR /home/mahidhar/python_workspace
+WORKDIR /home/pyspark/pyspark_activities
 
 
 #WORKDIR /home
@@ -27,7 +27,7 @@ RUN apt-get install -y curl bash \
 
 RUN apt-get install openjdk-8-jdk-headless -qq    
 
-ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/bin
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 RUN export JAVA_HOME
 #ENV IPADDRESS=$ip_address
 # Fix the value of PYTHONHASHSEED
